@@ -14,6 +14,10 @@ namespace MiJardin.Models
         [Key]
         public int PlantID { get; set; }
 
+        
+        [Display(Name = "Imagen")]
+        public string Imagen { get; set; }
+
 
         [Required(ErrorMessage = "Este campo no puede estar vacío")]
         [Display(Name = "Nombre (Especie)")]
@@ -31,9 +35,6 @@ namespace MiJardin.Models
         [Required(ErrorMessage = "Este campo no puede estar vacío")]
         [Display(Name = "Fertilizacion")]
         public string Fertilizacion { get; set; }
-
-
-
 
     }
 }
